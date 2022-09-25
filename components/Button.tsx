@@ -1,12 +1,10 @@
 import React from 'react'
 
-type Props = {}
-
-const Button = (props: Props) => {
+const Button = ({ style , content }: {style: string; content: string}) => {
   return (
-    <p>
-        Hello
-    </p>
+    <button type='button' className={`py-2 px-[56px] bg-white ${style} rounded-[10px] bg-gradient-to-r from-[#38FF34] to-[#CAFC01]`}>
+        {content}
+    </button>
   )
 }
 
