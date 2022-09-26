@@ -1,13 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:regular,bold');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  font-family: 'Poppins';
+  font-family: 'poppins';
   color: white;
   background-color: #131C1E;
 }
 
-button {
-  background: linear-gradient(270deg, #38FF34 0%, #CAFC01 100%);
+@layer components {
+  .hoverLink {
+    @apply px-6
+  }
 }

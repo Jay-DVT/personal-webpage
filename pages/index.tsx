@@ -10,11 +10,11 @@ const Home: NextPage = () => {
         <title>Diego Villanueva</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      {/* Header */}
       <Header />
       {/* Hero */}
-
+      <section id='hero'>
+        <Hero />
+      </section>
       {/* About */}
 
       {/* Experience */}
