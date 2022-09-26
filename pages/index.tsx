@@ -9,7 +9,6 @@ const Home: NextPage = () => {
       <Head>
         <title>Diego Villanueva</title>
         <link rel="icon" href="/favicon.ico" />
-        <link rel="stylesheet" href="devicon.min.css"></link>
       </Head>
       <Header />
       {/* Hero */}
@@ -21,7 +20,9 @@ const Home: NextPage = () => {
         <About />
       </section>
       {/* Experience */}
-
+      <section id='experience' className='snap-center'>
+        <Experience />
+      </section>
       {/* Projects */}
 
       {/* Contact */}

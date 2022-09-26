@@ -4,8 +4,9 @@ export const experiences = [
     {
       id: "experience-1",
       title: "Somethin Engineer",
-      Location: "Chihuahua, Mexico",
-      company: "bar",
+      location: "Chihuahua, Mexico",
+      company: "foo",
+      link: "",
       achievements: [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque.", 
         "Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat. Nulla aliquet porttitor venenatis",
@@ -15,23 +16,25 @@ export const experiences = [
     {
       id: "experience-2",
       title: "Somethin ENgineer Secured",
-      Location: "Chihuahua, Mexico",
+      location: "California, USA",
       company: "bar",
+      link: "",
       achievements: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque.", 
-        "Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat. Nulla aliquet porttitor venenatis",
-        "Donec a dui et dui fringilla consectetur id nec massa. Aliquam erat volutpat. Sed ut dui ut lacus dictum fermentum vel tincidunt neque"
+        "Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa", 
+        "quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.",
+        "Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos"
       ]  
     },
     {
       id: "experience-3",
       title: "Somethin ENgineer",
-      Location: "Chihuahua, Mexico",
-      company: "bar",
+      location: "CDMX, Mexico",
+      company: "ada",
+      link: "",
       achievements: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque.", 
-        "Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat. Nulla aliquet porttitor venenatis",
-        "Donec a dui et dui fringilla consectetur id nec massa. Aliquam erat volutpat. Sed ut dui ut lacus dictum fermentum vel tincidunt neque"
+        "Qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit amet, consectetur, adipisci[ng] velit", 
+        "sed quia non numquam [do] eius modi tempora inci[di]dunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam",
+        "quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?"
       ]  
     },
   ];

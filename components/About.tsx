@@ -7,7 +7,7 @@ export default function About({}: Props) {
   return (
     <div className='h-screen flex relative flex-col md:text-left text-center max-w-7xl px-10 md:justify-evenly justify-evenly mx-auto items-center'>
       <div className="relative flex flex-col py-5 items-center">
-        <p className='text-[40px] font-bold'>About</p>
+        <p className='md:text-[40px] text-[28px] font-bold'>About</p>
         <div className="flex-grow border-t border-white w-[80%]"></div>
       </div>
       <div id="about-content" className='flex md:flex-row flex-col md:items-center md:gap-[90px] gap-[30px]'>
@@ -17,11 +17,11 @@ export default function About({}: Props) {
             I like variety of things such as cooking, motoracing, relaxing, tech, finance, gaming and partying among other miscellaneous 
             interests that tend to get more outlandish by the second and they never seem to stop expanding.
           </p>
-          <p className='pt-10'>
+          <p className='md:pt-10 pt-3'>
             I look foward to experimenting with new and innovative concepts that can support my curiosity, 
             with the added benefit of implementing these knowledge into <span className='text-[#CCFF00]'>practical applications.</span> 
           </p>
-          <p className='pt-10'>My priority when looking into a project isn't how easy it can be but how much I can learn.</p>
+          <p className='md:pt-10 pt-3'>My priority when looking into a project isn't how easy it can be but how much I can learn.</p>
         </div>
         <div id="technologies" className='flex flex-col md:flex-1 md:mx-0 sm:mx-20 mx-0'>
           <div className='flex flex-row justify-between grow'>
