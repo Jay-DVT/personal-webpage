@@ -1,6 +1,5 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { css3, c, cplusplus, flask, git, html5, javascript, nodejs, postgresql, python, react, tailwindcss,} from '../assests'
 
 type Props = {}
 
@@ -11,9 +10,14 @@ export default function About({}: Props) {
         <p className='text-[40px] font-bold'>About</p>
         <div className="flex-grow border-t border-white w-[80%]"></div>
       </div>
-      <div id="about-content" className='flex md:flex-row flex-col md:items-center gap-[90px]'>
-        <div id="description" className='flex-1'>
+      <div id="about-content" className='flex md:flex-row flex-col md:items-center md:gap-[90px] gap-[30px]'>
+        <div id="description" className='flex-1 md:text-[20px] text-[12px]'>
           <p>
+            My name's Diego Villanueva Terrazas and I was born and raised in Chihuahua, 
+            I like variety of things such as cooking, motoracing, relaxing, tech, finance, gaming and partying among other miscellaneous 
+            interests that tend to get more outlandish by the second and they never seem to stop expanding.
+          </p>
+          <p className='pt-10'>
             I look foward to experimenting with new and innovative concepts that can support my curiosity, 
             with the added benefit of implementing these knowledge into <span className='text-[#CCFF00]'>practical applications.</span> 
           </p>
@@ -21,31 +25,127 @@ export default function About({}: Props) {
         </div>
         <div id="technologies" className='flex flex-col md:flex-1 md:mx-0 sm:mx-20 mx-0'>
           <div className='flex flex-row justify-between grow'>
-            <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-plain.svg' className='w-[70px]' />
-            <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-plain.svg' className='w-[70px]' />
-            <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg' className='w-[70px]' />
-            <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-plain.svg' className='w-[70px]' />
+            <motion.img
+              initial = {{
+                opacity: 0,
+                y: 7,
+              }}
+              whileInView={{ y: 0, opacity: 1,}}
+              transition={{ duration: 2 }}
+              viewport={{ once: true }}
+            src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-plain.svg' className='md:w-[70px] w-[35px]' />
+            <motion.img
+              initial = {{
+                opacity: 0,
+                y: 7,
+              }}
+              whileInView={{ y: 0, opacity: 1,}}
+              transition={{ duration: 2 }}
+              viewport={{ once: true }}
+            src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-plain.svg' className='md:w-[70px] w-[35px]' />
+            <motion.img
+              initial = {{
+                opacity: 0,
+                y: 7,
+              }}
+              whileInView={{ y: 0, opacity: 1,}}
+              transition={{ duration: 2 }}
+              viewport={{ once: true }}
+            src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg' className='md:w-[70px] w-[35px]' />
+            <motion.img
+              initial = {{
+                opacity: 0,
+                y: 7,
+              }}
+              whileInView={{ y: 0, opacity: 1,}}
+              transition={{ duration: 2 }}
+              viewport={{ once: true }}
+            src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-plain.svg' className='md:w-[70px] w-[35px]' />
           </div>
-          <div className='relative flex flex-col py-7 items-center md:pb-[70px] pb-[30px]'>
-            <div className="border-t border-white w-[100%]"></div>        
+          <div className='relative flex flex-col md:py-7 py-3 items-center md:pb-[70px] pb-[30px]'>
+            <div className="border-t-[3px] border-white w-[100%]"></div>        
           </div>
           <div className='flex flex-row justify-between'>
-            <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg' className='w-[70px]' />
-            <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg' className='w-[70px]' />
-            <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg' className='w-[70px]' />
-            <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg' className='w-[70px]' />
+            <motion.img
+              initial = {{
+                opacity: 0,
+                y: 7,
+              }}
+              whileInView={{ y: 0, opacity: 1,}}
+              transition={{ duration: 2 }}
+              viewport={{ once: true }}
+            src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg' className='md:w-[70px] w-[35px]' />
+            <motion.img
+              initial = {{
+                opacity: 0,
+                y: 7,
+              }}
+              whileInView={{ y: 0, opacity: 1,}}
+              transition={{ duration: 2 }}
+              viewport={{ once: true }}
+            src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg' className='md:w-[70px] w-[35px]' />
+            <motion.img
+              initial = {{
+                opacity: 0,
+                y: 7,
+              }}
+              whileInView={{ y: 0, opacity: 1,}}
+              transition={{ duration: 2 }}
+              viewport={{ once: true }}
+            src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg' className='md:w-[70px] w-[35px]' />
+            <motion.img
+              initial = {{
+                opacity: 0,
+                y: 7,
+              }}
+              whileInView={{ y: 0, opacity: 1,}}
+              transition={{ duration: 2 }}
+              viewport={{ once: true }}
+            src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg' className='md:w-[70px] w-[35px]' />
           </div>
-          <div className='relative flex flex-col py-7 items-center md:pb-[70px] pb-[30px]'>
-            <div className="border-t border-white w-[100%]"></div>        
+          <div className='relative flex flex-col md:py-7 py-3 items-center md:pb-[70px] pb-[30px]'>
+            <div className="border-t-[3px] border-white w-[100%]"></div>        
           </div>
           <div className='flex flex-row justify-between'>
-            <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain.svg' className='w-[70px]'/>
-            <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' className='w-[70px]' />
-            <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg' className='w-[70px]' />
-            <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg' className='w-[70px]' />
+            <motion.img
+              initial = {{
+                opacity: 0,
+                y: 7,
+              }}
+              whileInView={{ y: 0, opacity: 1,}}
+              transition={{ duration: 2 }}
+              viewport={{ once: true }}
+            src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain.svg' className='md:w-[70px] w-[35px]'/>
+            <motion.img
+              initial = {{
+                opacity: 0,
+                y: 7,
+              }}
+              whileInView={{ y: 0, opacity: 1,}}
+              transition={{ duration: 2 }}
+              viewport={{ once: true }}
+            src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' className='md:w-[70px] w-[35px]' />
+            <motion.img
+              initial = {{
+                opacity: 0,
+                y: 7,
+              }}
+              whileInView={{ y: 0, opacity: 1,}}
+              transition={{ duration: 2 }}
+              viewport={{ once: true }}
+            src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg' className='md:w-[70px] w-[35px]' />
+            <motion.img
+              initial = {{
+                opacity: 0,
+                y: 7,
+              }}
+              whileInView={{ y: 0, opacity: 1,}}
+              transition={{ duration: 2 }}
+              viewport={{ once: true }}
+            src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg' className='md:w-[70px] w-[35px]' />
           </div>
-          <div className='relative flex flex-col py-7 items-center'>
-            <div className="border-t border-white w-[100%]"></div>        
+          <div className='relative flex flex-col md:py-7 py-3 items-center'>
+            <div className="border-t-[3px] border-white w-[100%]"></div>        
           </div>
         </div>
       </div>
