@@ -61,7 +61,7 @@ export default function Header({}: Props) {
       transition = {{duration: 2, }}
       >
         {/* button takes extra parameters for reusability later down the line, content: inside Text */}
-        <Button style={'hidden px-[56px] lg:inline-flex text-black xl:mr-[0px] mr-[30px]'} content={'Resume'} />
+        <Button style={'hidden px-[56px] lg:inline-flex  xl:mr-[0px] mr-[30px]'} content={'Resume'} />
       </motion.div>
     </header>
   )
