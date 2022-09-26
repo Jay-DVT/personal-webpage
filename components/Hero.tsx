@@ -1,5 +1,7 @@
 import React from 'react';
-import {useTypewriter} from 'react-simple-typewriter';
+import { Cursor, useTypewriter } from 'react-simple-typewriter';
+import Button from './Button';
+
 
 type Props = {}
 
@@ -11,14 +13,18 @@ export default function Hero({}: Props) {
       "too much time in my hands"
     ],
     loop: true,
-    delaySpeed: 8000,
+    delaySpeed: 7000,
   });
 
   return (
     <div className='h-screen flex flex-col justify-center lg:ml-[310px] mx-[12%] font-bold'> {/* 124 extra from the left div */}
       <p className='text-[16px]'>Welcome to my dungeon,</p>
       <p className='font-bold md:text-[50px] text-[40px]'>I'm <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#CCFF00] to-[#00D1FF]'>Diego Villanueva</span></p>
-      <p className='md:text-[20px] text-[18px] pt-5'>an aspiring computer scientist, with <span>{text}</span></p>
+      <p className='md:text-[20px] text-[18px] pt-5'>an aspiring computer scientist, with </p>
+      <p className='md:text-[20px] text-[18px]'> <Cursor cursorStyle='>'/> {text}</p>
+      <div className='flex justify-start'>
+        <Button style={'px-[56px] inline-flex lg:hidden text-black mt-5'} content={'Resume'} />
+      </div>
     </div>
   )
 }
