@@ -7,6 +7,7 @@ export const experiences = [
       location: "Chihuahua, Mexico",
       company: "foo",
       link: "",
+      period: "2021-2022",
       achievements: [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque.", 
         "Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat. Nulla aliquet porttitor venenatis",
@@ -19,6 +20,7 @@ export const experiences = [
       location: "California, USA",
       company: "bar",
       link: "",
+      period: "2019-2021",
       achievements: [
         "Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa", 
         "quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.",
@@ -31,6 +33,7 @@ export const experiences = [
       location: "CDMX, Mexico",
       company: "ada",
       link: "",
+      period: "2018-2019",
       achievements: [
         "Qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit amet, consectetur, adipisci[ng] velit", 
         "sed quia non numquam [do] eius modi tempora inci[di]dunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam",

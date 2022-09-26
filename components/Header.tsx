@@ -11,7 +11,7 @@ export default function Header({}: Props) {
     <header className='flex justify-center sticky top-0 font-bold max-w-7xl z-50 mx-auto sm:text-[18px] text-[10px] items-center'>
       {/* Invisible button used to achieve the other button's right position */}
       <Button style={'hidden md:inline-flex text-black invisible'} content={'Resume'}/>
-      <div id='header-anchor-container' className='py-[35px] flex space-x-[45px] justify-center mx-auto'>
+      <div id='header-anchor-container' className='py-[35px] sm:flex hidden space-x-[45px] justify-center mx-auto'>
         {/* Shortcuts */}
         <a className='hover:text-[#CAFC01]' href="#home">// 
           <span>
@@ -29,6 +29,14 @@ export default function Header({}: Props) {
             delaySpeed={2000}
             />
           </span></a>
+        <a className='hover:text-[#CAFC01]' href="#experience">// 
+          <span>
+            {/* Typewriter is used for 1 time per link, they have varying speeds to make it look different */}
+          <Typewriter 
+            words={[' Experience']}
+            typeSpeed={Math.random() * 700}
+            />
+          </span></a>
         <a className='hover:text-[#CAFC01]' href="#projects">//         
         <span>
           <Typewriter 
@@ -36,6 +44,7 @@ export default function Header({}: Props) {
             typeSpeed={Math.random() * 700}
             />
           </span></a>
+        
         <a className='hover:text-[#CAFC01]' href="#contact">//         
         <span>
           <Typewriter 

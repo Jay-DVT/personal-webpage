@@ -8,6 +8,7 @@ type Props = {}
 export default function Hero({}: Props) {
   const {text} = useTypewriter({
     words: [
+      "great music taste",
       "less than optimal interests",
       "lacking energy",
       "too much time in my hands"
@@ -22,7 +23,7 @@ export default function Hero({}: Props) {
       {/* gradient has an inside clause where it is deleted on hover and a border is colored */}
       <p className='font-bold md:text-[50px] text-[40px]'>I'm <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#CCFF00] to-[#00D1FF]'>Diego Villanueva</span></p>
       <p className='md:text-[20px] text-[18px] pt-5'>an aspiring computer scientist, with </p>
-      <p className='md:text-[20px] text-[18px]'> <Cursor cursorStyle='>'/> {text}</p>
+      <p className='md:text-[20px] text-[18px]'> <Cursor cursorStyle='>'/> {text} <Cursor cursorStyle='_'/> </p>
       <div className='flex justify-start'>
         <Button style={'px-[56px] inline-flex lg:hidden text-black mt-5'} content={'Resume'} />
       </div>
