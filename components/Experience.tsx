@@ -6,10 +6,12 @@ import { pin } from '../assests'
 type Props = {}
 
 export default function Experience({}: Props) {
-
+  /* TODO Create a toggle looking between each experience option */
   const toggle = ({i}: {i: boolean}) => {
     return i
   }
+
+  /* TODO disable or hidden the other divs that dont dont have the id selected  */
 
   return (
     <div className='h-screen flex relative flex-col md:text-left text-center max-w-7xl px-10 md:justify-evenly justify-evenly mx-auto items-center md:text-[15px] text-[12px]'>
@@ -41,6 +43,7 @@ export default function Experience({}: Props) {
                 
               </div>
               <p>
+                {/* nested map loop to post the list of achievements on the experience  */}
                 {experience.achievements.map((achievement, index) => (
                   <p>
                     <span className='text-[#CAFC01]'>{'> '}</span>
