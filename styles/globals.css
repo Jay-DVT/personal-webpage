@@ -14,4 +14,14 @@ body {
   .hoverLink {
     @apply px-6
   }
+  .line {
+    @apply 
+    absolute
+    border-b-4
+    border-white
+    top-0
+    left-[10%]
+    w-[80%]
+  }
+
 }
