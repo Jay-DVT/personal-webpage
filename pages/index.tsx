@@ -12,11 +12,13 @@ const Home: NextPage = () => {
       </Head>
       <Header />
       {/* Hero */}
-      <section id='hero'>
+      <section id='home' className='snap-start'>
         <Hero />
       </section>
       {/* About */}
-
+      <section id='about' className='snap-center'>
+        <About />
+      </section>
       {/* Experience */}
 
       {/* Projects */}
