@@ -14,6 +14,7 @@ import python from './python.svg'
 import react from './react.svg'
 import tailwindcss from './tailwindcss.svg'
 import mail from './mail.svg'
+import pin from './map-pin.svg'
 
 export {
     instagram, 
@@ -32,4 +33,5 @@ export {
     python, 
     react, 
     tailwindcss, 
+    pin,
 }
