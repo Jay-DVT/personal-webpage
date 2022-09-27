@@ -18,5 +18,3 @@ export default function Experience({}: Props) {
     </div>
   )
 }
-
-

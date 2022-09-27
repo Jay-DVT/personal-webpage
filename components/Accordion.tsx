@@ -8,6 +8,9 @@ const Accordion = (props: Props) => {
     const [selected, setSelected] = useState(0)
     
     const toggle = (i: number) => {
+        if(setSelected !== null) {
+            setSelected(null)
+        }
         setSelected(i)
     }
 
@@ -16,9 +19,10 @@ const Accordion = (props: Props) => {
             <ul>
                 {experiences.map((experience, i) => (
                     <div className='flex'>
-                        <div className='border-l border-r border-[#495670] relative flex items-center justify-center'>
-                        <div className="absolute z-5 w-2 h-2 bg-[#495670] rounded-full"></div>
-                        <div key={i} className={`absolute z-10 w-2 h-2  rounded-full ${selected === i ? "bg-[#CAFC01]" : "hidden" }`}></div>
+                        <div className={`border-l z-5 border-r border-[#495670] relative top-[18px] ${i === experiences.length - 1 ? "bg-transparent h-[5px]" : "" } flex items-center justify-center`}>
+                            <div className={`border-l ${selected < i + 1 ? "border-[#CAFC01]" : "hidden" } z-8 ${i === experiences.length - 1 ? "border-dashed h-[30px]" : "" } border-r h-[60px]  absolute top-2 flex items-center justify-center`}></div>
+                            <div key={i} className={`absolute z-10 w-3 h-3 top-0 rounded-full ${selected < i + 1 ? "bg-[#CAFC01]" : "hidden" }`}></div>
+                            <div key={i} className={`absolute z-5 w-2 h-2 top-0 rounded-full bg-gray-700`}></div>
                         </div>
                         <li key={i} className={`w-full rounded-r-lg px-5 cursor-pointer hover:bg-gray-700/40 ${i === 1 ? "accordion_header" : "" }`} onClick={() => toggle(i)}>
                             <p className={`${selected === i ? "text-[#CAFC01]" : "" }`}>{experience.title}</p>
@@ -35,7 +39,7 @@ const Accordion = (props: Props) => {
                             <span className='px-2'>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
                             </span>
-                            <span className='w-[150px]'>{experience.location}</span>
+                            <span className='w-[200px]'>{experience.location}</span>
                             <span className='px-2'>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
                             </span>
