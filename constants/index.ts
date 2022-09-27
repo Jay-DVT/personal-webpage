@@ -1,4 +1,4 @@
-import { css3, mail, linkedin, github, instagram } from "../assests";
+import { css3, mail, linkedin, github, instagram, racoon } from "../assests";
 
 export const experiences = [
     {
@@ -48,30 +48,35 @@ export const projects = [
       title: "Bicycle Maintenance Tracker",
       tech: "ReactJS/Tailwind",
       link: "3800+",
+      image: racoon,
     },
     {
       id: "project-2",
       title: "Personal Webpage",
       tech: "ReactJS/NextJS/Tailwind",
       link: "230+",
+      image: "",
     },
     {
       id: "project-3",
       title: "Algorithm Visualizer",
       tech: "Javascript",
       link: "$230M+",
+      image: "",
     },
     {
         id: "project-4",
         title: "Travel Planner",
         tech: "Javascript",
         link: "$230M+",
+        image: "",
     },
     {
         id: "project-5",
         title: "Automated Schedule Picker",
         tech: "Python",
         link: "$230M+",
+        image: "",
     },
   ];
   

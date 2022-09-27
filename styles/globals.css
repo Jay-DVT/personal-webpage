@@ -25,3 +25,9 @@ body {
   }
 
 }
+
+.bigCard {
+  height: 400px;
+  width: 600px;
+  border-radius: 25px;
+}

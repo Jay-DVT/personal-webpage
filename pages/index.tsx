@@ -18,12 +18,12 @@ const Home: NextPage = () => {
       <section id='about' className='snap-center'>
         <About />
       </section>
-      {/* Experience */}
       <section id='experience' className='snap-center'>
         <Experience />
       </section>
-      {/* Projects */}
-
+      <section id='projects' className='snap-center'>
+        <Projects />
+      </section>
       {/* Contact */}
 
       {/* Footer */}
