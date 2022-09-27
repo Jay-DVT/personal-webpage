@@ -5,9 +5,9 @@ type Props = {}
 
 export default function ProjectCard({}: Props) {
   return (
-    <div className='flex flex-wrap justify-center align-middle mt-5'>
+    <div className='flex md:flex-wrap overflow-x-auto justify-center align-middle mt-5'>
         {projects.map((project, index) => (
-            <div key="index" className={`flex justify-center align-middle w-[270px] flex-col m-[2rem] p-[1rem] rounded-[0.5rem] bg-[#101010] cursor-pointer hover:shadow-lg`} >
+            <div key="index" className={`flex justify-center align-middle w-[270px] flex-col m-[2rem] border-[2px] hover:border-[#CAFC01] border-transparent p-[1rem] rounded-[0.5rem] bg-[#101010] cursor-pointer hover:shadow-lg`} >
                 <a href={project.link}>
                     <div>
                         <img src="https://pbs.twimg.com/media/EZAXVBoWoAoqx0r.jpg" className={`w-[100%] h-[230px] relative object-cover rounded-[0.5rem]`}/>
