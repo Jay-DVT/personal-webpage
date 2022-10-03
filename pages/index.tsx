@@ -9,7 +9,6 @@ const Home: NextPage = () => {
       <Head>
         <title>Diego Villanueva</title>
         <link rel="icon" href="/favicon.svg" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
       </Head>
       <Header />
       <section id='home' className='snap-start'>
