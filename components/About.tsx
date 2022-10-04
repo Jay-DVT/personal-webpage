@@ -11,7 +11,7 @@ export default function About({}: Props) {
         <div className="flex-grow border-t border-white w-[80%]"></div>
       </div>
       <div id="about-content" className='flex md:flex-row flex-col md:items-center md:gap-[90px] gap-[30px]'>
-        <div id="description" className='flex-1 md:text-[20px] text-[12px]'>
+        <div id="description" className='flex-1 md:text-[20px] text-[14px]'>
           <p>
             My name&apos;s Diego Villanueva Terrazas and I was born and raised in Chihuahua, 
             I like variety of things such as cooking, motoracing, relaxing, tech, finance, gaming and partying among other miscellaneous 
