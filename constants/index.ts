@@ -1,4 +1,8 @@
 import { css3, mail, linkedin, github, instagram } from "../assests";
+import racoon from '../public/daracoon.jpg'
+import webpage from '../public/personal-webpage.png'
+import bike from '../public/bike-maintenance.png'
+import sorter from '../public/sorting-visualizer.png'
 
 export const experiences = [
     {
@@ -47,22 +51,22 @@ export const projects = [
       id: "project-1",
       title: "Bicycle Maintenance Tracker",
       tech: "ReactJS/Tailwind",
-      link: "3800+",
-      image: "https://drive.google.com/file/d/1MctsPTeelwwjGJIOWI1-5jNCJzi1U4Sa/preview",
+      link: "",
+      image: bike,
     },
     {
       id: "project-2",
       title: "Personal Webpage",
       tech: "ReactJS/NextJS/Tailwind",
-      link: "",
-      image: "https://drive.google.com/file/d/1MctsPTeelwwjGJIOWI1-5jNCJzi1U4Sa/preview",
+      link: "https://djay-dvt.netlify.app/",
+      image: webpage,
     },
     {
       id: "project-3",
       title: "Algorithm Visualizer",
       tech: "Javascript",
-      link: "$230M+",
-      image: "https://drive.google.com/file/d/1MctsPTeelwwjGJIOWI1-5jNCJzi1U4Sa/preview",
+      link: "",
+      image: sorter,
     },
   ];
   
