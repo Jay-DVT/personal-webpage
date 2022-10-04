@@ -13,7 +13,7 @@ export default function Contact({}: Props) {
       <div className='flex md:flex-row flex-col m-[50px] w-[90%]'>
         <div className='sm:w-[30%] sm:pt-0 py-[30px]'>
           <p className=''>
-          Have a project in mind, or any collaborations that may fit my experience, don't mind reaching out
+          Have a project in mind, or any collaborations that may fit my experience, don&apos;t mind reaching out
           </p>
         </div>
         <div className='flex flex-col flex-grow sm:w-[60%]'>

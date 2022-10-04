@@ -13,7 +13,7 @@ export default function About({}: Props) {
       <div id="about-content" className='flex md:flex-row flex-col md:items-center md:gap-[90px] gap-[30px]'>
         <div id="description" className='flex-1 md:text-[20px] text-[12px]'>
           <p>
-            My name's Diego Villanueva Terrazas and I was born and raised in Chihuahua, 
+            My name&apos;s Diego Villanueva Terrazas and I was born and raised in Chihuahua, 
             I like variety of things such as cooking, motoracing, relaxing, tech, finance, gaming and partying among other miscellaneous 
             interests that tend to get more outlandish by the second and they never seem to stop expanding.
           </p>
@@ -21,7 +21,7 @@ export default function About({}: Props) {
             I look foward to experimenting with new and innovative concepts that can support my curiosity, 
             with the added benefit of implementing these knowledge into <span className='text-[#CCFF00]'>practical applications.</span> 
           </p>
-          <p className='md:pt-10 pt-3'>My priority when looking into a project isn't how easy it can be but how much I can learn.</p>
+          <p className='md:pt-10 pt-3'>My priority when looking into a project isn&apos;t how easy it can be but how much I can learn.</p>
         </div>
         <div id="technologies" className='flex flex-col md:flex-1 md:mx-0 sm:mx-20 mx-0'>
           <div className='flex flex-row justify-between grow'>

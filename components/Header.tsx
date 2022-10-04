@@ -13,7 +13,7 @@ export default function Header({}: Props) {
       <Button style={'hidden md:inline-flex text-black invisible'} content={'Resume'}/>
       <div id='header-anchor-container' className='py-[35px] sm:flex hidden space-x-[45px] justify-center mx-auto'>
         {/* Shortcuts */}
-        <a className='hover:text-[#CAFC01]' href="#home">// 
+        <a className='hover:text-[#CAFC01]' href="#home">
           <span>
             {/* Typewriter is used for 1 time per link, they have varying speeds to make it look different */}
           <Typewriter 
@@ -21,7 +21,7 @@ export default function Header({}: Props) {
             typeSpeed={Math.random() * 700}
             />
           </span></a>
-        <a className='hover:text-[#CAFC01]' href="#about">// 
+        <a className='hover:text-[#CAFC01]' href="#about">
         <span>
           <Typewriter 
             words={[' About']}
@@ -29,7 +29,7 @@ export default function Header({}: Props) {
             delaySpeed={2000}
             />
           </span></a>
-        <a className='hover:text-[#CAFC01]' href="#experience">// 
+        <a className='hover:text-[#CAFC01]' href="#experience">
           <span>
             {/* Typewriter is used for 1 time per link, they have varying speeds to make it look different */}
           <Typewriter 
@@ -37,7 +37,7 @@ export default function Header({}: Props) {
             typeSpeed={Math.random() * 700}
             />
           </span></a>
-        <a className='hover:text-[#CAFC01]' href="#projects">//         
+        <a className='hover:text-[#CAFC01]' href="#projects">     
         <span>
           <Typewriter 
             words={[' Projects']}
@@ -45,7 +45,7 @@ export default function Header({}: Props) {
             />
           </span></a>
         
-        <a className='hover:text-[#CAFC01]' href="#contact">//         
+        <a className='hover:text-[#CAFC01]' href="#contact">    
         <span>
           <Typewriter 
             words={[' Contact']}
