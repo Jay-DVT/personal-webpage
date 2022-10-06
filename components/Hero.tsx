@@ -25,7 +25,9 @@ export default function Hero({}: Props) {
       <p className='md:text-[20px] text-[18px] pt-5'>an aspiring computer scientist, with </p>
       <p className='md:text-[20px] text-[18px]'> <Cursor cursorStyle='>'/> {text} <Cursor cursorStyle='_'/> </p>
       <div className='flex justify-start'>
-        <Button style={'px-[56px] inline-flex lg:hidden text-black mt-5'} content={'Resume'} />
+        <a href="https://drive.google.com/file/d/10fxvwxnmU2DTqoLRri4tQ_vL2Jro6uzX/view?usp=sharing">
+          <Button style={'px-[56px] inline-flex md:hidden text-black mt-5'} content={'Resume'} />
+        </a>
       </div>
     </div>
   )

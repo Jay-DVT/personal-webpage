@@ -5,13 +5,7 @@ import { Cursor, Typewriter } from 'react-simple-typewriter';
 
 type Props = {}
 
-export default function Header({}: Props) {
-  const changeBackground = () => {
-      console.log(window.scrollY)
-  }
-
-  
-  
+export default function Header({}: Props) {  
   return (
     /* Sticky top, TODO add a shadow box effect on scroll */
     <header className='flex justify-center sticky top-0 font-bold max-w-7xl z-50 mx-auto sm:text-[18px] text-[10px] items-center'>
@@ -46,7 +40,7 @@ export default function Header({}: Props) {
             typeSpeed={Math.random() * 700}
             />
           </span></a>
-        <a className='hover:text-[#CAFC01]' href="#projects">     
+        <a className='hover:text-[#CAFC01] hidden' href="#projects">     
         {'//'}
         <span>
           <Typewriter 
