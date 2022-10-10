@@ -5,7 +5,6 @@ import Button from './Button'
 type Props = {}
 
 const Accordion = (props: Props) => {
-    /* starts on state 0  to select the first experience on startup */
     const [selected, setSelected] = useState(0)
     
     const toggle = (i: number) => {
