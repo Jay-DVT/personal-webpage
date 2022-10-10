@@ -31,7 +31,7 @@ export default function Header({}: Props) {
             delaySpeed={2000}
             />
           </span></a>
-        <a className='hover:text-[#CAFC01]' href="#experience">
+        <a className='hover:text-[#CAFC01] hidden' href="#experience">
           {'//'}
           <span>
             {/* Typewriter is used for 1 time per link, they have varying speeds to make it look different */}
@@ -40,7 +40,7 @@ export default function Header({}: Props) {
             typeSpeed={Math.random() * 700}
             />
           </span></a>
-        <a className='hover:text-[#CAFC01] hidden' href="#projects">     
+        <a className='hover:text-[#CAFC01] ' href="#projects">     
         {'//'}
         <span>
           <Typewriter 

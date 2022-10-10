@@ -17,9 +17,10 @@ export default function Contact({}: Props) {
           </p>
         </div>
         <div className='flex flex-col flex-grow sm:w-[60%]'>
-          <input type="text" placeholder='Name' className='bg-[#000000] mb-4 rounded-lg h-[60px]'></input>
+          {/* TODO Create form link */}
+          {/* <input type="text" placeholder='Name' className='bg-[#000000] mb-4 rounded-lg h-[60px]'></input>
           <input type="text" placeholder='Mail' className='bg-[#000000] mb-4 rounded-lg h-[60px]'></input>
-          <input type="text" placeholder='Message' className='bg-[#000000] mb-4 rounded-lg h-[120px]'></input>
+          <input type="text" placeholder='Message' className='bg-[#000000] mb-4 rounded-lg h-[120px]'></input> */}
           <div className='flex justify-end'>
             <Button style='px-[70px] font-bold' content='Submit'/>
           </div>
