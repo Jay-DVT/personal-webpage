@@ -3,6 +3,7 @@ import racoon from '../public/daracoon.jpg'
 import webpage from '../public/personal-webpage.png'
 import bike from '../public/bike-maintenance.png'
 import sorter from '../public/sorting-visualizer.png'
+import highschool from '../public/highschool.png'
 
 export const experiences = [
     {
@@ -49,20 +50,27 @@ export const experiences = [
 export const projects = [
     {
       id: "project-1",
+      title: "Personal Webpage",
+      tech: "Flask, Python, SQL",
+      link: "https://github.com/Jay-DVT/high-school-app",
+      image: highschool
+    },
+    {
+      id: "project-2",
       title: "Bicycle Maintenance Tracker",
       tech: "ReactJS/Tailwind",
       link: "",
       image: bike,
     },
     {
-      id: "project-2",
+      id: "project-3",
       title: "Personal Webpage",
       tech: "ReactJS/NextJS/Tailwind",
       link: "https://djay-dvt.netlify.app/",
       image: webpage,
     },
     {
-      id: "project-3",
+      id: "project-4",
       title: "Algorithm Visualizer",
       tech: "Javascript",
       link: "",

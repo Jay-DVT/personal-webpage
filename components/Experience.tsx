@@ -12,7 +12,8 @@ export default function Experience({}: Props) {
         <p className='md:text-[40px] text-[28px] font-bold'>Experience</p>
         <div className="flex-grow border-t border-white w-[80%]"></div>
       </div>
-      <div className='sm:flex min-h-[400px] hidden mt-[180px]'>
+      <div  className='sm:flex min-h-[400px] hidden mt-[180px]'>
+
         <Accordion />
       </div>
     </div>
