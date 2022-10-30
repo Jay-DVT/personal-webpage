@@ -11,19 +11,26 @@ export default function Contact({}: Props) {
         <div className="flex-grow border-t border-white w-[80%]"></div>
       </div>
       <div className='flex md:flex-row flex-col m-[50px] w-[90%]'>
-        <div className='sm:w-[30%] sm:pt-0 py-[30px]'>
-          <p className=''>
+        <div className='md:w-[30%] sm:pt-0 py-[30px]'>
+          <p>
           Have a project in mind, or any collaborations that may fit my experience, don&apos;t mind reaching out
           </p>
         </div>
-        <div className='flex flex-col flex-grow sm:w-[60%]'>
-          {/* TODO Create form link */}
-          {/* <input type="text" placeholder='Name' className='bg-[#000000] mb-4 rounded-lg h-[60px]'></input>
-          <input type="text" placeholder='Mail' className='bg-[#000000] mb-4 rounded-lg h-[60px]'></input>
-          <input type="text" placeholder='Message' className='bg-[#000000] mb-4 rounded-lg h-[120px]'></input> */}
-          <div className='flex justify-end'>
-            <Button style='px-[70px] font-bold' content='Submit'/>
-          </div>
+        <div className='flex flex-col flex-grow md:w-[60%]'>
+          <form className='sm:ml-3' name="contact" method="POST" data-netlify="true">
+            <p className='mt-1'>
+              <label>Your Name: <br /><input className='w-full' type="text" name="name" /></label>
+            </p>
+            <p className='mt-1'>
+              <label>Your Email: <br /><input className='w-full' type="email" name="email" /></label>
+            </p>
+            <p className='mt-1'>
+              <label>Message: <br /><textarea className='w-full' name="message"></textarea></label>
+            </p>
+            <p className='mt-1'>
+              <button type="submit"><Button style='px-[70px] font-bold' content='Submit'/></button>
+            </p>
+          </form>
         </div>
       </div>
     </div>

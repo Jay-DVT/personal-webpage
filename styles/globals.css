@@ -57,3 +57,15 @@ input::placeholder {
   padding-left: 10px;
 }
 
+input, textarea {
+@apply
+  border-[2px] 
+  hover:border-[#CAFC01] 
+  border-transparent 
+  p-[.5rem] 
+  rounded-[0.5rem] 
+  bg-[#101010] 
+  cursor-text 
+  hover:shadow-lg
+}
+
