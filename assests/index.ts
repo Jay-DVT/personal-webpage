@@ -15,6 +15,8 @@ import react from './react.svg'
 import tailwindcss from './tailwindcss.svg'
 import mail from './mail.svg'
 import pin from './map-pin.svg'
+import menu from './menu.svg'
+import xMark from './x.svg'
 
 export {
     instagram, 
@@ -34,4 +36,6 @@ export {
     react, 
     tailwindcss, 
     pin,
+    menu,
+    xMark,
 }
