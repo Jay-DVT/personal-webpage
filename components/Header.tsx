@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import Button from "./Button";
 import { Cursor, Typewriter } from "react-simple-typewriter";
 import { useEffect, useState } from "react";
+import { menu, xMark } from "../assests";
+import Image from "next/image";
 
 type Props = {};
 
@@ -22,15 +24,21 @@ export default function Header({}: Props) {
     window.addEventListener("scroll", changeBackground);
   });
 
+//toggle mobile menu
+  const [mobileMenu, setMobileMenu] = useState(false);
+  const toggleMobileMenu = () => {
+    setMobileMenu(!mobileMenu);
+  };
+
   return (
-    /* Sticky top, TODO add a shadow box effect on scroll */
     <header
       id="navbar"
-      className={`z-50 onTopHeader ${
-        navbar ? "header ease-in duration-300" : ""
-      }`}
+      className={`z-50 onTopHeader  
+      ${ navbar ? "header duration-700" : "" } 
+      ${ mobileMenu ? "backdrop-blur-sm z-10 fixed top-0 left-0 overflow-x-hidden pt-8 w-auto  " : ""}
+      `}
     >
-      <div className="flex justify-center sticky top-0 font-bold max-w-7xl z-50 mx-auto sm:text-[18px] text-[10px] items-center">
+      <div className="hidden sm:flex justify-center sticky top-0 font-bold max-w-7xl z-50 mx-auto sm:text-[18px] text-[50px] items-center">
         {/* Invisible button used to achieve the other button's right position */}
         <Button
           style={"hidden md:inline-flex text-black invisible"}
@@ -117,6 +125,20 @@ export default function Header({}: Props) {
             />
           </motion.div>
         </a>
+      </div>
+      {/* Mobile menu */}
+      <button className={`sm:hidden mt-4 ml-7 ${mobileMenu ? 'collapse hidden' : 'top-4 left-4'} `} onClick={toggleMobileMenu}>
+        <Image src={menu} width={70} height={65} ></Image>
+      </button>
+      <div id="mobileNav" className={`flex flex-col pb-4 ${mobileMenu ? 'ml-8 h-auto w-16' : 'hidden w-0'} `}>
+        <button className="text-lg closebtn" onClick={toggleMobileMenu}>
+          <Image src={xMark} width={70} height={65} ></Image>
+        </button>
+        <a onClick={toggleMobileMenu} className={'text-[24px] pt-2, pr-2, pb-2, pl-5'} href="#home">Home</a>
+        <a onClick={toggleMobileMenu} className={'text-[24px] pt-2, pr-2, pb-2, pl-5'} href="#about">About</a>
+        <a onClick={toggleMobileMenu} className={'text-[24px] pt-2, pr-2, pb-2, pl-5 hidden'}  href="#experience">Experience</a>
+        <a onClick={toggleMobileMenu} className={'text-[24px] pt-2, pr-2, pb-2, pl-5'} href="#projects">Projects</a>
+        <a onClick={toggleMobileMenu} className={'text-[24px] pt-2, pr-2, pb-2, pl-5'} href="#contact">Contact</a>
       </div>
     </header>
   );

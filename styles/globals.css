@@ -57,6 +57,14 @@ input::placeholder {
   padding-left: 10px;
 }
 
+.mobileNav a {
+  @apply
+  pt-2
+  pr-2
+  pb-2
+  pl-8
+}
+
 input, textarea {
 @apply
   border-[2px] 
@@ -68,4 +76,3 @@ input, textarea {
   cursor-text 
   hover:shadow-lg
 }
-
