@@ -27,9 +27,7 @@ export default function Contact({}: Props) {
             <p className='mt-1'>
               <label>Message: <br /><textarea className='w-full' name="message"></textarea></label>
             </p>
-            <p className='mt-1'>
-              <button className={`py-2 text-black rounded-[10px] bg-gradient-to-r from-[#38FF34] to-[#CAFC01] hover:text-[#CAFC01] hover:from-transparent hover:border-[#CAFC01] border-2 border-transparent px-[70px] font-bold`} type="submit">Send</button>
-            </p>
+            <button className={`py-2 text-black rounded-[10px] bg-gradient-to-r from-[#38FF34] to-[#CAFC01] hover:text-[#CAFC01] hover:from-transparent hover:border-[#CAFC01] border-2 border-transparent px-[70px] font-bold`} type="submit">Send</button>
           </form>
         </div>
       </div>
