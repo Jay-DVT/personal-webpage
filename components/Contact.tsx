@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from './Button'
+import ContactForm from './ContactForm'
 
 type Props = {}
 
@@ -17,7 +17,9 @@ export default function Contact({}: Props) {
           </p>
         </div>
         <div className='flex flex-col flex-grow md:w-[60%]'>
-          <form className='sm:ml-3' name="contact" method="POST" data-netlify="true">
+          <ContactForm />
+
+          {/* <form className='sm:ml-3' name="contact" method="POST" data-netlify="true" onSubmit="submit">
             <p className='mt-1'>
               <label>Your Name: <br /><input className='w-full' type="text" name="name" /></label>
             </p>
@@ -27,8 +29,10 @@ export default function Contact({}: Props) {
             <p className='mt-1'>
               <label>Message: <br /><textarea className='w-full' name="message"></textarea></label>
             </p>
-            <button className={`py-2 text-black rounded-[10px] bg-gradient-to-r from-[#38FF34] to-[#CAFC01] hover:text-[#CAFC01] hover:from-transparent hover:border-[#CAFC01] border-2 border-transparent px-[70px] font-bold`} type="submit">Send</button>
-          </form>
+            <button 
+              className={`py-2 text-black rounded-[10px] bg-gradient-to-r from-[#38FF34] to-[#CAFC01] hover:text-[#CAFC01] hover:from-transparent hover:border-[#CAFC01] border-2 border-transparent px-[70px] font-bold`} 
+              type="submit">Send</button>
+          </form> */}
         </div>
       </div>
     </div>
