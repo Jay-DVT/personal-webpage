@@ -50,7 +50,7 @@ export const experiences = [
 export const projects = [
     {
       id: "project-1",
-      title: "Personal Webpage",
+      title: "High School Testing App",
       tech: "Flask, Python, SQL",
       link: "https://github.com/Jay-DVT/high-school-app",
       image: highschool
@@ -93,10 +93,5 @@ export const projects = [
       id: "social-media-3",
       icon: linkedin,
       link: "https://www.linkedin.com/",
-    },
-    {
-      id: "social-media-4",
-      icon: instagram,
-      link: "https://www.instagram.com/",
     },
   ];

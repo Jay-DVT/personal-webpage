@@ -9,7 +9,6 @@ type Props = {}
 export default function Header({}: Props) {
     const [navbar, setNavbar] = useState(false)
     const changeBackground = () => {
-      console.log(window.scrollY)
       if (window.scrollY > 0) {
         setNavbar(true)
       } else {
