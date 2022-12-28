@@ -1,6 +1,6 @@
 export default function ContactForm() {
     return (
-    <form className='sm:ml-3' name="contact" action="/" method="POST" data-netlify="true">
+    <form className='sm:ml-3' name="contact" action="/success" method="POST" data-netlify="true">
         <input type="hidden" name="form-name" value="contact" />
         <p className='mt-1'>
           <label htmlFor="yourname">

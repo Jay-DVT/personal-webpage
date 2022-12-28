@@ -18,21 +18,6 @@ export default function Contact({}: Props) {
         </div>
         <div className='flex flex-col flex-grow md:w-[60%]'>
           <ContactForm />
-
-          {/* <form className='sm:ml-3' name="contact" method="POST" data-netlify="true" onSubmit="submit">
-            <p className='mt-1'>
-              <label>Your Name: <br /><input className='w-full' type="text" name="name" /></label>
-            </p>
-            <p className='mt-1'>
-              <label>Your Email: <br /><input className='w-full' type="email" name="email" /></label>
-            </p>
-            <p className='mt-1'>
-              <label>Message: <br /><textarea className='w-full' name="message"></textarea></label>
-            </p>
-            <button 
-              className={`py-2 text-black rounded-[10px] bg-gradient-to-r from-[#38FF34] to-[#CAFC01] hover:text-[#CAFC01] hover:from-transparent hover:border-[#CAFC01] border-2 border-transparent px-[70px] font-bold`} 
-              type="submit">Send</button>
-          </form> */}
         </div>
       </div>
     </div>
