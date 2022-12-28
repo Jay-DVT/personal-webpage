@@ -80,18 +80,15 @@ export const projects = [
   
   export const media = [
     {
-      id: "social-media-1",
-      icon: mail,
-      link: "https://www.gmail.com/",
-    },
-    {
       id: "social-media-2",
+      name: "Github",
       icon: github,
-      link: "https://www.github.com/",
+      link: "https://github.com/Jay-DVT",
     },
     {
       id: "social-media-3",
+      name: "LinkedIn",
       icon: linkedin,
-      link: "https://www.linkedin.com/",
+      link: "https://www.linkedin.com/in/tvillanueva-diego/",
     },
   ];

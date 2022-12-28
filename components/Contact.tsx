@@ -1,5 +1,7 @@
 import React from 'react'
 import ContactForm from './ContactForm'
+import { media } from '../constants'
+import Image from 'next/image'
 
 type Props = {}
 
@@ -15,6 +17,14 @@ export default function Contact({}: Props) {
           <p>
           Have a project in mind, or any collaborations that may fit my experience, don&apos;t mind reaching out
           </p>
+          <br />
+          <div className='text-right mr-10'>
+            {media.map((item, index) => (
+              <a className='pl-4' key={index} href={item.link}>
+                <Image key={item.id} src={item.icon} alt={item.name}></Image>
+              </a>
+            ))}
+          </div>
         </div>
         <div className='flex flex-col flex-grow md:w-[60%]'>
           <ContactForm />
