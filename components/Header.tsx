@@ -103,7 +103,7 @@ export default function Header({}: Props) {
           </a>
         </div>
         {/* Resume link button */}
-        <a href="https://drive.google.com/file/d/10fxvwxnmU2DTqoLRri4tQ_vL2Jro6uzX/view?usp=sharing">
+        <a href="https://drive.google.com/file/d/1Vbg7knfUZbkjExJs4aB6_D8KMWpc20GG/view?usp=sharing">
           <motion.div
             /* Entrance animation for the button */
             initial={{
